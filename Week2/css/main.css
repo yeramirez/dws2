@@ -1,5 +1,5 @@
 body {
-  background-image:url("../img/shattered.png"); 
+  background-image:url("../img/img_8619.jpg");
 }
 
 #slider {
@@ -7,5 +7,6 @@ body {
 }
 
 button, .button {
-  background-color: #3e3e3e;
+  height: 40px;
+  background-color: #1F2D40;
 }
