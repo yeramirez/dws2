@@ -6,7 +6,7 @@ body {
 }
 
   #wrapper {
-	background-color: #F2F3F8;
+	background-color: #D7DADD;
 	width:75%;
 	margin: 0 auto;
 	padding-left: 1%;
@@ -60,11 +60,6 @@ footer {
   padding-left: -15px;
 }
 
-#wrapper > .large-4 {
-  padding-left: auto;
-  padding-right: auto;
-}
-
 h2 {
   font-family: 'Raleway', serif;
 }
@@ -76,4 +71,49 @@ h2 {
 .panel {
   height: 334px;
   background-image: url("../img/ethan1.png");
+}
+
+table {
+  padding: 0 auto;
+}
+
+.large-8 > p {
+  text-align: center;
+}
+
+/* ---------------------------- Media Queries ----------------------------*/
+
+
+	/* Smaller browsers */
+	@media only screen and (max-width: 959px) {
+
+	}
+	/* Tablet Portrait */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+	}
+
+	/*Mobile*/
+	@media only screen and (max-width: 767px) {
+
+
+
+
+	}
+
+	/* Mobile Landscape */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .panel {
+      background-image: url("../img/ethanmobile2.png");
+    }
+
+	}
+	/* Mobile Portrait Size to mobile landscape size */
+	@media only screen and (max-width: 590px) {
+	
+  .panel {
+    background-image: url("../img/ethanmobile.png");
+  }
+
 }
