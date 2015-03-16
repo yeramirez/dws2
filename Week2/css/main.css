@@ -1,5 +1,19 @@
 body {
-  background-image:url("../img/img_8619.jpg");
+  font-family: 'Raleway', serif;
+  height: 100%;
+  color: #1f2d40;
+  background-image: url("../img/shattered.png");
+}
+
+  #wrapper {
+	background-color: #F2F3F8;
+	width:75%;
+	margin: 0 auto;
+	padding-left: 1%;
+	padding-right: 1%;
+	-webkit-box-shadow: 0px 0px 5px #ececec;
+	-moz-box-shadow:    0px 0px 5px #ececec;
+	box-shadow:         0px 0px 5px #ececec;
 }
 
 #slider {
@@ -7,6 +21,59 @@ body {
 }
 
 button, .button {
-  height: 40px;
+  height: 45px;
+  margin-top: 20px;
+  padding-top: 13px;
   background-color: #1F2D40;
+}
+
+.sub-nav {
+  margin: 0 auto;
+  padding-top: 0;
+  width: 370px;
+}
+
+.large-6 {
+  border-top: 1px solid #bbb8bf;
+}
+
+.row > p {
+  color: #fff;
+  text-align: center;
+  font-size: 6em;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Raleway', serif;
+}
+
+footer {
+  height: 35px;
+  opacity: 0.7;
+  background-color: none;
+  padding-top: 5px;
+}
+
+.inline-list {
+  width: 350px;
+  padding-left: -15px;
+}
+
+#wrapper > .large-4 {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+h2 {
+  font-family: 'Raleway', serif;
+}
+
+.large-12 > img {
+  padding-top: 20px;
+}
+
+.panel {
+  height: 334px;
+  background-image: url("../img/ethan1.png");
 }
