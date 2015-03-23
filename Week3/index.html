@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forming it up!</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <nav>
+      <a href="#signUp">Sign Up</a> |
+      <a href="#signIn">Sign In</a>
+    </nav>
+    <form id="redemption" method="post">
+        <h1>Matchmaker Bliss  &lt;3</h1>
+        <fieldset>
+          <legend id="signIn">Sign In<img src="img/signin.png" alt="Sign In" width="25" height="25"></legend>
+          Username:  <input type="text" name="user_id" /><br>
+          Password:  <input type="password" name="password" />
+          <br /><input type="submit">
+        </fieldset>
+      <fieldset>
+      <legend id="signUp">Personal Information</legend>
+      <div>
+        <label for="name">*First Name:</label>
+          <input id="name" name="name" type="text" placeholder="e.g. Gee" required aria-required="true" >
+        <label for="name" id="lastName">*Last Name:</label>
+          <input id="last" name="name" type="text" placeholder="e.g. Willikers" required aria-required="true" ><br/>
+        Birthday:
+          <input type="date">
+        <br /><label for="gender">Gender:</label>
+          <input type="radio" name="sex" value="male" checked>Male
+          <input type="radio" name="sex" value="female">Female<br />
+          <label for="city">City:</label>
+            <input id="city" name="name" type="text" placeholder="e.g. Orlando" required aria-required="true" >
+          <label for="state" id="labelState">State:</label>
+            <input id="state" name="name" type="text" placeholder="e.g. Florida" required aria-required="true" >
+            <label for="country" id="country">Country:</label>
+          <select name="dropdown">
+            <option value="uae">United Arab Emirates</option>
+            <option value="uk">United Kingdom</option>
+            <option value="us" selected>United States</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="uzbekistan">Uzbekistan</option>
+          </select>
+        <br />Language:<br />
+        <select name="dropdown">
+          <option value="english" selected>English</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+          <option value="surprise">Surprise Me</option>
+        </select>
+        <br /><label for="email">*Email:</label>
+          <input id="email" name="email" type="email" placeholder="e.g. geewillikers@imcool.com" required aria-required="true" ><br/>
+        Description: <br />
+        <textarea rows="5" cols="50" name="description">
+        Describe yourself here...
+        </textarea>
+        <br />Interested In:<br />
+        <select name="dropdown">
+          <option value="men" selected>Men</option>
+          <option value="women">Women</option>
+          <option value="both">Both</option>
+          <option value="not sure">Not Sure</option>
+        </select>
+        <br />Hair:<br />
+          <input type="checkbox" name="brown" value="on"> Brown
+          <input type="checkbox" name="blonde" value="on"> Blonde
+          <input type="checkbox" name="black" value="on"> Black
+          <input type="checkbox" name="bald" value="on"> Bald
+        <br />Eyes:<br />
+          <input type="checkbox" name="brown" value="on"> Brown
+          <input type="checkbox" name="blue" value="on"> Blue
+          <input type="checkbox" name="green" value="on"> Green
+          <input type="checkbox" name="black" value="on"> Black
+          <br /><p id="file">Upload a photo of yourself:</p>
+          <input type="file" name="fileupload" accept="image/*" />
+      </div>
+      </fieldset>
+      <fieldset>
+      <legend>How are you going to use Matchmaker Bliss?</legend>
+        <select name="dropdown">
+          <option value="friendship">Friendship</option>
+          <option value="dating" selected>Dating</option>
+          <option value="marriage">Possible Marriage</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Partner Interests</legend>
+        Age:<br />
+        18 <input type="range"
+          min="18"
+          max="110"
+          value="46"> 110
+        <br />Hair:<br />
+          <input type="checkbox" name="brown" value="on"> Brown
+          <input type="checkbox" name="blonde" value="on"> Blonde
+          <input type="checkbox" name="black" value="on"> Black
+          <input type="checkbox" name="bald" value="on"> Bald
+        <br />Eyes:<br />
+          <input type="checkbox" name="brown" value="on"> Brown
+          <input type="checkbox" name="blue" value="on"> Blue
+          <input type="checkbox" name="green" value="on"> Green
+          <input type="checkbox" name="black" value="on"> Black
+      </fieldset>
+    </form>
+    <footer>
+      <p>© Matchmaker Bliss | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
