@@ -20,9 +20,8 @@
 
   h1 {
     margin-top: 50px;
-    font-family: 'Cookie', cursive;
+    font: 3em 'Cookie', cursive;
     text-align: center;
-    font-size: 3em;
     color: #E0122A;
   }
 
@@ -34,8 +33,7 @@
   }
 
   legend {
-    font-family: 'Rancho', cursive;
-    font-size: 2em;
+    font: 2em 'Rancho', cursive;
   }
 
   #lastName {
@@ -59,6 +57,10 @@
   img {
     position: absolute;
     z-index: 1;
+  }
+
+  label {
+    margin: 2px;
   }
 
   footer {
@@ -207,6 +209,7 @@
     }
 
     #lastName {
+      width: 150px;
       position: relative;
       left: -240px;
       top: 30px;
@@ -214,7 +217,7 @@
 
     #last {
       position: relative;
-      left: 100px;
+      left: 45px;
     }
 
     #labelState {
