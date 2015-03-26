@@ -101,9 +101,13 @@ p {
 	margin-bottom: 0;
 }
 
-#section1, #section2, #section3 {
+.section1, .section2, .section3 {
 	width: 65%;
 	padding-bottom: 15px;
+}
+
+.section1 {
+	margin-top: 35px;
 }
 
 .gallery {
