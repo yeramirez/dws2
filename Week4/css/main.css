@@ -5,7 +5,7 @@ body{
 	color:#545257;
 	margin-top: 0;
 	margin-left: 0;
-	background: linear-gradient(to bottom, #0f3a5b 1%,#293247 51%,#151a25 100%);
+	background: linear-gradient(to bottom, #2575d6 1%,#184b8a 51%,#151a25 100%);
 }
 
 .wrapper{
@@ -36,11 +36,6 @@ h2 {
 	padding-top: 5px;
 }
 
-#top {
-	height: 810px;
-	background-color: #272D40;
-}
-
 .cta {
 	width: 60%;
 	margin: 0 auto;
@@ -51,8 +46,9 @@ h2 {
 	width: 300px;
 	height: 174px;
 	border: 0;
-	margin: 0 auto 0 200px;;
 	padding-bottom: 20px;
+	position: relative;
+	left: 30%;
 }
 
 nav {
