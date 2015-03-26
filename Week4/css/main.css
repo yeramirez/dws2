@@ -6,7 +6,6 @@ body{
 	margin-top: 0;
 	margin-left: 0;
 	background: linear-gradient(to bottom, #0f3a5b 1%,#293247 51%,#151a25 100%);
-	/*background: linear-gradient(to bottom, #aeb5bf 0%,#747f8c 49%,#747f8c 100%);*/
 }
 
 .wrapper{
@@ -46,7 +45,6 @@ h2 {
 	width: 60%;
 	margin: 0 auto;
 	border-bottom: 1px solid #bbb8bf;
-	/*background: linear-gradient(to right, #ffffff 0%,#6ed8ff 100%);*/
 }
 
 .cta > a > img {
@@ -73,6 +71,12 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+}
+
+nav ul li:hover {
+	-ms-transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	transform: rotate(5deg);
 }
 
 nav ul li a {
