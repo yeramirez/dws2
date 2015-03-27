@@ -201,15 +201,12 @@ iframe {
 
 }
 
-@media only screen and (max-width: 767px) {
-	.cta > a > img {
+@media only screen and (min-width: 550px) and (max-width: 767px) {
+	.cta >a > img {
 		position: relative;
-		left: 13%;
+		left: 6%;
 	}
 
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
 	.nav {
 		position: relative;
 		min-height: 40px;
@@ -253,24 +250,34 @@ iframe {
 		margin: 0 0 5px;
 	}
 	.nav ul:hover .current {
-		background: url(images/icon-check.png) no-repeat 10px 7px;
+		background: url(images/icon-check.png) no-repeat 32px 32px;
 	}
 
-	/* right nav */
 	.nav.right ul {
 		left: auto;
 		right: 0;
 	}
 
-	/* center nav */
 	.nav.center ul {
 		left: 50%;
 		margin-left: -90px;
 	}
 
+	#container {
+	  text-align: center;
 	}
 
-@media only screen and (max-width: 479px) {
+	#container div {
+	  margin: 2%;
+	}
+}
+
+@media only screen and (min-width: 504px) and (max-width: 549px) {
+	.cta >a > img {
+		position: relative;
+		left: 1%;
+	}
+
 	.nav {
 		position: relative;
 		min-height: 40px;
@@ -323,5 +330,14 @@ iframe {
 		left: 50%;
 		margin-left: -90px;
 	}
+}
+
+@media only screen and (max-width: 420px) {
+	.cta >a > img {
+		height: 87;
+		width: 200px;
+		position: relative;
+		left: 5%;
 
 	}
+}
