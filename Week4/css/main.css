@@ -84,11 +84,18 @@ nav ul li {
   display: inline-block;
 }
 
-nav ul li:hover {
-	-ms-transform: rotate(5deg);
-	-webkit-transform: rotate(5deg);
-	transform: rotate(5deg);
+#even:hover {
+	-ms-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
 }
+
+nav ul li:hover {
+	-ms-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
 
 nav ul li a {
   padding: 18px;
@@ -325,6 +332,7 @@ iframe {
 	.cta {
 		width: 100%;
 	}
+
 	.cta > a > img {
 		position: relative;
 		left: 20%;
@@ -352,50 +360,37 @@ iframe {
 	.cta {
 		width: 100%;
 		border-bottom: clear;
+		padding-top: 50px;
 	}
 
 	.cta > a > img {
-		position: clear;
-		margin: 0 auto;
+		position: relative;
+		left: 15%;
 	}
 
 	#container {
 		border-bottom: 1px solid #bbb8bf;
 	}
-}
 
-@media only screen and (max-width: 420px) {
-	body {
-		width: 96%;
-		margin: 0 auto;
-	}
-	.cta {
-		width: 60%;
-		margin-left: 70px;
+	.video {
+		display: none;
 	}
 
-	.cta > a > img {
-		width: 300px;
-		height: 174px;
-		position: relative;
-		left: -50px;
+	#fly, #home {
+		display: none;
 	}
 
-	#container {
-		width: 60%;
+	.section1 {
+		width: 100%;
 	}
 
-	/*------------------------Hamburger--------------*/
+	/*----------------Hamburger------------*/
 	* {
 	  margin:0;
 	  padding:0;
 	  transition: all 0.2s ease-in-out;
 	}
 
-	/* Hamburger navigation */
-
-	/* Hamburger Menu */
-	/* Default State */
 	#nav-trigger {
 	  position: absolute;
 	  opacity:0;
@@ -405,6 +400,7 @@ iframe {
 	  float:left;
 	  width: 30px;
 	  height: 25px;
+		margin-top: 15px;
 	  display: inline-block;
 	  cursor: pointer;
 	  z-index: 11;
@@ -419,6 +415,8 @@ iframe {
 	  content: '';
 	  transition: all 0.2s ease-in-out;
 	}
+
+	/*--------------------The crosshairs------------------------------*/
 	label span {
 	  top: 10px;
 	}
@@ -428,33 +426,145 @@ iframe {
 	label span:after {
 	  top: 10px;
 	}
-	/* Toggled State */
+	/*----------Doing the cool thing from the hamburger to the X----------*/
 	input[type=checkbox]:checked + label span {
 	  background-color:transparent;
 	}
 	input[type=checkbox]:checked + label span:before {
 	  transform: rotate(45deg);
 	  top: 0px;
-	  background-color: white;
+	  background-color: black;
 	}
 	input[type=checkbox]:checked + label span:after {
 	  transform: rotate(-45deg);
 	  top: 0px;
-	  background-color: white;
+	  background-color: black;
 	}
 
-	/* Navigation Menu */
-	/* Default State */
 	.nav {
 		position: absolute;
 		width: 100%;
-		height: 100%;
 		left: 0;
 		top: -100%;
-		background: linear-gradient(to bottom, #2575d6 1%,#184b8a 51%,#151a25 100%);;
+		background-color: #fff;
 		z-index: 10;
 		opacity: 1;
 	}
+	nav ul li {
+	  display: block;
+	}
+
+	/* Toggled State */
+	input[type=checkbox]:checked ~ .nav {
+	   top:0;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	body {
+		width: 96%;
+		margin: 0 auto;
+	}
+	.cta {
+		width: 60%;
+		padding-top: 50px;
+		margin-left: 70px;
+	}
+
+	.cta > a > img {
+		width: 300px;
+		height: 174px;
+		position: relative;
+		left: -55px;
+	}
+
+	#container {
+		width: 60%;
+	}
+
+	.video {
+		display: none;
+	}
+
+	#fly, #home {
+		display: none;
+	}
+
+	.section1 {
+		width: 100%;
+	}
+
+	/*------------------------Hamburger--------------*/
+	/*---------------transition time between the hamburger spans and the X------------*/
+	* {
+	  margin:0;
+	  padding:0;
+	  transition: all 0.2s ease-in-out;
+	}
+
+	#nav-trigger {
+	  position: absolute;
+	  opacity:0;
+	}
+	label {
+	  position: relative;
+	  float:left;
+	  width: 30px;
+	  height: 25px;
+		margin-top: 15px;
+	  display: inline-block;
+	  cursor: pointer;
+	  z-index: 11;
+	}
+	label span, label span:before, label span:after {
+	  cursor: pointer;
+	  border-radius: 0px;
+	  height: 5px;
+	  width: 30px;
+	  background-color: black;
+	  position: absolute;
+	  content: '';
+	  transition: all 0.2s ease-in-out;
+	}
+
+	/*--------------------The crosshairs (pretty cool)------------------------------*/
+	label span {
+	  top: 10px;
+	}
+	label span:before {
+	  top: -10px;
+	}
+	label span:after {
+	  top: 10px;
+	}
+	/*----------Doing the cool thing from the hamburger to the X----------*/
+	input[type=checkbox]:checked + label span {
+	  background-color:transparent;
+	}
+	input[type=checkbox]:checked + label span:before {
+	  transform: rotate(45deg);
+	  top: 0px;
+	  background-color: black;
+	}
+	input[type=checkbox]:checked + label span:after {
+	  transform: rotate(-45deg);
+	  top: 0px;
+	  background-color: black;
+	}
+
+	.nav {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: -100%;
+		background-color: #fff;
+		z-index: 10;
+		opacity: 1;
+	}
+	nav ul li {
+	  display: block;
+	}
+
 	/* Toggled State */
 	input[type=checkbox]:checked ~ .nav {
 	   top:0;
