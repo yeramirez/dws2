@@ -202,10 +202,10 @@ iframe {
 }
 
 @media only screen and (min-width: 550px) and (max-width: 767px) {
-	.cta >a > img {
-		position: relative;
-		left: 6%;
+	.cta {
+		width: 100%;
 	}
+
 
 	.nav {
 		position: relative;
@@ -272,10 +272,9 @@ iframe {
 	}
 }
 
-@media only screen and (min-width: 504px) and (max-width: 549px) {
-	.cta >a > img {
-		position: relative;
-		left: 1%;
+ @media only screen and (min-width: 504px) and (max-width: 549px) {
+	.cta {
+		width: 100%;
 	}
 
 	.nav {
@@ -332,12 +331,35 @@ iframe {
 	}
 }
 
+@media only screen and (min-width: 421px) and (max-width: 503px) {
+	.cta {
+		width: 100%;
+		border-bottom: clear;
+	}
+
+	.cta > a > img {
+		position: clear;
+		margin: 0 auto;
+	}
+
+	#container {
+		border-bottom: 1px solid #bbb8bf;
+	}
+}
+
 @media only screen and (max-width: 420px) {
-	.cta >a > img {
-		height: 87;
-		width: 200px;
-		position: relative;
-		left: 5%;
+	.cta {
+		width: 60%;
 
 	}
+
+	.cta > a > img {
+		width: 300px;
+		height: 174px;
+		position: relative;
+		left: -50px;
+	}
+
+	#container {
+		width: 60%;
 }
