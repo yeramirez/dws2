@@ -166,7 +166,7 @@ p {
 	width: 85%;
 }
 
-input {
+.wrapper > input {
   display: none;
 }
 
@@ -189,22 +189,135 @@ p > a:active {
 	margin: 0 auto;
 }
 
-	#home {
+#home {
 		padding-right: 10px;
 		border-right: 1px solid #bbb8bf;
-	}
+}
 
-	#fly {
+#fly {
 		padding-left: 10px;
-	}
+}
 
-	.section1 {
+.section1 {
 	width: 96%;
 	margin: 20px auto 15px auto;
 }
 
 iframe {
 	margin: 15px auto;
+}
+
+/*---------------------Contact Page--------------------*/
+
+form > nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+form > nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+	margin-bottom: 0;
+}
+
+form > nav ul li {
+  display: inline-block;
+}
+
+form > nav ul li:hover {
+	-ms-transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+
+form > nav ul li a {
+  padding: 18px;
+  font-family: "Questrial";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+form > nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+	color: #0f3a5b;
+}
+
+form {
+	width: 50%;
+	margin: 0 auto;
+	line-height: 1.5em;
+	font-size: 2em;
+	list-style-type: none;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 50%;
+    resize:vertical;
+		border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+
+input {
+	width: 200px;
+	height: 20px;
+	margin-left: 10px;
+	border:1px solid #aaa;
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+  border-radius:2px;
+}
+
+input:focus {
+	background: #fff;
+  border:1px solid #555;
+  box-shadow: 0 0 3px #aaa;
+}
+
+form > li {
+  padding:12px;
+  border-bottom:1px solid #eee;
+  position:relative;
+}
+
+
+button.submit {
+  background-color: #68b12f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+  background: -webkit-linear-gradient(top, #68b12f, #50911e);
+  background: -moz-linear-gradient(top, #68b12f, #50911e);
+  background: -ms-linear-gradient(top, #68b12f, #50911e);
+  background: -o-linear-gradient(top, #68b12f, #50911e);
+  background: linear-gradient(top, #68b12f, #50911e);
+  border: 1px solid #509111;
+  border-bottom: 1px solid #5b992b;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #9fd574;
+  -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+  -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+  -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+  -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+  color: white;
+  font-weight: bold;
+  padding: 6px 20px;
+  text-align: center;
+  text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+  opacity:.85;
+  cursor: pointer;
 }
 
 /*-----------------Media Queries-----------------------*/
@@ -310,6 +423,10 @@ iframe {
 		width: 400px;
 		height: 225px;
 	}
+
+	form {
+		width: 75%;
+	}
 }
 
 @media only screen and (max-width: 665px) {
@@ -338,7 +455,10 @@ iframe {
 
 	.section1 {
 		width: 100%;
+	}
 
+	form {
+		width: 85%;
 	}
 }
 
@@ -371,6 +491,15 @@ iframe {
 
 	.section1 {
 		width: 100%;
+	}
+
+	form {
+		width: 96%;
+	}
+
+	#firstName, #lastName, #message {
+		width: 100%;
+		height: 100%;
 	}
 
 	/*----------------Hamburger------------*/
@@ -483,14 +612,16 @@ iframe {
 		width: 100%;
 	}
 
-	/*------------------------Hamburger--------------*/
-	/*---------------transition time between the hamburger spans and the X------------*/
-	* {
-	  margin:0;
-	  padding:0;
-	  transition: all 0.2s ease-in-out;
+	form {
+		width: 100%;
 	}
 
+	#firstName, #lastName, #message {
+		width: 100%;
+		height: 100%;
+	}
+
+	/*------------------------Hamburger--------------*/
 	#nav-trigger {
 	  position: absolute;
 	  opacity:0;

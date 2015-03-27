@@ -4,30 +4,30 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Krys Talk</title>
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Questrial|Raleway' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="img/favicon.jpeg">
   </head>
   <body>
     <div class="wrapper">
-      <div id="navBar">
-        <nav>
+      <input type="checkbox" id="nav-trigger"/>
+      <label for="nav-trigger"><span></span></label>
+        <nav class="nav">
           <ul>
-            <li>
+            <li class="nav-item" id="even">
               <a href="index.html">Home</a>
             </li>
-            <li>
+            <li class="nav-item">
               <a href="about.html">About</a>
             </li>
-            <li>
+            <li class="nav-item" id="even">
               <a href="music.html">Music</a>
             </li>
-            <li>
+            <li class="nav-item">
               <a href="contact.html">Contact</a>
             </li>
           </ul>
         </nav>
-      </div>
       <div class="cta">
         <a href="index.html"><img src="img/favicon.png" alt="Krys Talk Logo"></a>
       </div>
@@ -36,15 +36,15 @@
       </div>
       <form>
         <li>
-          <label for="name">First Name:</label>
+          <label id ="firstName" for="name">First Name:</label>
             <input id="name" name="name" type="text" placeholder="e.g. Gee" required aria-required="true" >
         </li>
         <li>
-          <label for="name" id="lastName">Last Name:</label>
+          <label id="lastName" for="name" id="lastName">Last Name:</label>
             <input id="last" name="name" type="text" placeholder="e.g. Willikers" required aria-required="true" >
         </li>
         <li>
-          <label for="message">Message:</label>
+          <label id="message" for="message">Message:</label>
             <textarea name="message" cols="40" rows="6" ></textarea>
         </li>
         <li>
