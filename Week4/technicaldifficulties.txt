@@ -1,1 +1,0 @@
-I was having problems with the mobile screen (max height of 420) because there was a horizontal scroll that wouldn’t go away even though I inspected every element and tried adjusting things here and there, if I could get your feedback on how to fix that I would appreciate it. Thanks.

@@ -1,23 +1,14 @@
-body{
+body {
 	font-size: 62.5%;
 	width: 100%;
 	font-family: 'Raleway', sans-serif;
 	color:#545257;
 	margin-top: 0;
 	margin-left: 0;
-	background: linear-gradient(to bottom, #2575d6 1%,#184b8a 51%,#151a25 100%);
+	background-color: #E6E8E8;
 }
 
-.wrapper{
-	background: linear-gradient(to bottom, #f2f3f8 0%,#edeff4 24%,#edeff4 47%,#dddee3 72%,#d7dadd 100%);
-	width:82.90%;
-	margin: 30px auto;
-	padding: 15px;
-	padding-top: 0;
-	-webkit-box-shadow: 0px 0px 3px #fff;
-	   -moz-box-shadow: 0px 0px 3px #fff;
-	        box-shadow: 0px 0px 3px #fff;
-}
+
 
 /*------------Header information----------*/
 
@@ -49,35 +40,26 @@ h4 {
 	margin-bottom: 10px;
 }
 
+.wrapper {
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
 /*----------------CTA / Logo -----------*/
 .cta {
-	width: 60%;
-	margin: 0 auto;
-	border-bottom: 1px solid #bbb8bf;
-}
-
-.cta > a > img {
-	width: 300px;
-	height: 174px;
-	border: 0;
-	padding-bottom: 20px;
-	position: relative;
-	left: 30%;
-}
-
-/* --------------------Navigation-------------*/
-nav {
-  max-width: 960px;
-  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  width: 45%;
   margin: 0 auto;
-  padding-top: 15px;
-	padding-bottom: 15px;
+  padding: 20px;
 }
+
+.cta a img {
+  width: 100%
+}
+/* --------------------Navigation-------------*/
 
 nav ul {
-  text-align: center;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
-	margin-bottom: 0;
+  margin: 0 auto;
+  width: 441px;
 }
 
 nav ul li {
@@ -114,80 +96,16 @@ nav ul li a:hover {
 }
 
 /*-------------------------Images--------------------*/
-.images, .about li {
-	list-style-type: none;
-}
-
-#container {
-  text-align: justify;
-  font-size: 0.1px;
-	margin: 0 auto;
-  width: 96%;
-}
-#container div {
-  width: 212px;
-  height: 212px;
-	padding-top: 20px;
-  display: inline-block;
-}
-#container:after {
-  content: '';
-  width: 96%;
-  display: inline-block;
-}
-
-#container div:hover {
-	  -ms-transform: scale(1.15,1.15);
--webkit-transform: scale(1.15,1.15);
-			  transform: scale(1.15,1.15);
+.col-sm-3 { padding: 2%; }
+.col-sm-3:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+-webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 img {
-  padding: 5px;
-  border: 1px solid #ccc;
-	width: 200px;
-	height: 200px;
+  width: 100%;
 }
-
-/*--------------------Zoom In effect on the first imags ------------*/
-
-@-webkit-keyframes zoomIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-	@keyframes zoomIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-.zoomIn {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-
 
 /*--------------------About Page -----------------*/
 
@@ -380,15 +298,6 @@ button.submit:hover {
 }
 
 @media only screen and (max-width: 1080px) {
-	.wrapper {
-		width: 85%;
-	}
-
-	.cta > a > img {
-		position: relative;
-		left: 25%;
-	}
-
 	.video {
 		width: 65%;
 	}
@@ -406,15 +315,6 @@ button.submit:hover {
 }
 
 @media only screen and (max-width: 959px) {
-	.wrapper {
-		width: 90%
-	}
-
-	.cta > a > img {
-		position: relative;
-		left: 18%;
-	}
-
 	.video {
 		width: 58%;
 		margin: 0 auto;
@@ -437,23 +337,6 @@ button.submit:hover {
 }
 
 @media only screen and (max-width: 767px) {
-	.cta {
-		width: 100%;
-	}
-
-	.cta > a > img {
-		position: relative;
-		left: 30%;
-	}
-
-	#container {
-	  text-align: center;
-	}
-
-	#container div {
-	  margin: 2%;
-	}
-
 	.video {
 		width: 69%;
 		margin: 0 auto;
@@ -470,10 +353,6 @@ button.submit:hover {
 }
 
 @media only screen and (max-width: 665px) {
-	.cta > a > img {
-		position: relative;
-		left: 23%;
-	}
 	.video {
 		display: none;
 	}
@@ -484,14 +363,9 @@ button.submit:hover {
 }
 
  @media only screen and (min-width: 504px) and (max-width: 549px) {
-	.cta {
-		width: 100%;
-	}
-
-	.cta > a > img {
-		position: relative;
-		left: 20%;
-	}
+  .cta {
+    width: 70%;
+  }
 
 	.section1 {
 		width: 100%;
@@ -502,24 +376,14 @@ button.submit:hover {
 	}
 }
 
-@media only screen and (min-width: 421px) and (max-width: 503px) {
-	#wrapper {
-		width: 96%
-		margin: 0 auto;
-	}
-	.cta {
-		border-bottom: clear;
-		padding-top: 50px;
-	}
+@media only screen and (min-width: 421px) and (max-width: 503px) {}
+  .cta {
+    width: 70%;
+  }
 
-	.cta > a > img {
-		position: relative;
-		left: 15%;
-	}
-
-	#container {
-		border-bottom: 1px solid #bbb8bf;
-	}
+  .cta a img {
+    margin-top: 40px;
+  }
 
 	.video {
 		display: none;
@@ -619,25 +483,17 @@ button.submit:hover {
 }
 
 @media only screen and (max-width: 420px) {
+  .cta {
+    width: 70%;
+  }
+
+  .cta a img {
+    margin-top: 40px;
+  }
+
 	body {
 		width: 96%;
 		margin: 0 auto;
-	}
-	.cta {
-		width: 60%;
-		padding-top: 50px;
-		margin-left: 70px;
-	}
-
-	.cta > a > img {
-		width: 300px;
-		height: 174px;
-		position: relative;
-		left: -55px;
-	}
-
-	#container {
-		width: 60%;
 	}
 
 	.video {
