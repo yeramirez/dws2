@@ -1,0 +1,119 @@
+body {
+  font-family: 'Raleway', serif;
+  height: 100%;
+  color: #1f2d40;
+  background-image: url("../img/shattered.png");
+}
+
+  #wrapper {
+	background-color: #D7DADD;
+	width:75%;
+	margin: 0 auto;
+	padding-left: 1%;
+	padding-right: 1%;
+	-webkit-box-shadow: 0px 0px 5px #ececec;
+	-moz-box-shadow:    0px 0px 5px #ececec;
+	box-shadow:         0px 0px 5px #ececec;
+}
+
+#slider {
+  height: 646px;
+}
+
+button, .button {
+  height: 45px;
+  margin-top: 20px;
+  padding-top: 13px;
+  background-color: #1F2D40;
+}
+
+.sub-nav {
+  margin: 0 auto;
+  padding-top: 0;
+  width: 370px;
+}
+
+.large-6 {
+  border-top: 1px solid #bbb8bf;
+}
+
+.row > p {
+  color: #fff;
+  text-align: center;
+  font-size: 6em;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Raleway', serif;
+}
+
+footer {
+  height: 35px;
+  opacity: 0.7;
+  background-color: none;
+  padding-top: 5px;
+}
+
+.inline-list {
+  width: 350px;
+  padding-left: -15px;
+}
+
+h2 {
+  font-family: 'Raleway', serif;
+}
+
+.large-12 > img {
+  padding-top: 20px;
+}
+
+.panel {
+  height: 334px;
+  background-image: url("../img/ethan1.png");
+}
+
+table {
+  padding: 0 auto;
+}
+
+.large-8 > p {
+  text-align: center;
+}
+
+/* ---------------------------- Media Queries ----------------------------*/
+
+
+	/* Smaller browsers */
+	@media only screen and (max-width: 959px) {
+
+	}
+	/* Tablet Portrait */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+	}
+
+	/*Mobile*/
+	@media only screen and (max-width: 767px) {
+
+
+
+
+	}
+
+	/* Mobile Landscape */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .panel {
+      background-image: url("../img/ethanmobile2.png");
+    }
+
+	}
+	/* Mobile Portrait Size to mobile landscape size */
+	@media only screen and (max-width: 590px) {
+	
+  .panel {
+    background-image: url("../img/ethanmobile.png");
+  }
+
+}
