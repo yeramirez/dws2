@@ -47,9 +47,9 @@ h4 {
 
 /*----------------CTA / Logo -----------*/
 .cta {
-  width: 45%;
+  width: 25%;
   margin: 0 auto;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
 .cta a img {
@@ -59,48 +59,35 @@ h4 {
 
 nav ul {
   margin: 0 auto;
-  width: 441px;
+  width: 450px;
 }
 
 nav ul li {
   display: inline-block;
 }
 
-#even:hover {
-	-ms-transform: rotate(10deg);
-	-webkit-transform: rotate(10deg);
-	transform: rotate(10deg);
-}
-
-nav ul li:hover {
-	-ms-transform: rotate(-10deg);
-	-webkit-transform: rotate(-10deg);
-	transform: rotate(-10deg);
-}
-
-
 nav ul li a {
   padding: 18px;
   font-family: "Questrial";
   text-transform:uppercase;
-  color: #184b8a;
+  color: #30AEFD;
   font-size: 18px;
   text-decoration: none;
   display: block;
 }
 
 nav ul li a:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.1);
-  color: #2575d6;
+  text-decoration: none;
+  font-size: 2em;
+  color: #222;
 }
 
 /*-------------------------Images--------------------*/
-.col-sm-3 { padding: 2%; }
+.col-sm-3 { padding: 1%; }
 .col-sm-3:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-   -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
--webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+-webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 img {
@@ -126,14 +113,6 @@ p {
 
 .wrapper > input {
   display: none;
-}
-
-footer {
-	text-align: center;
-	font-size: .7em;
-	color: #fff;
-	margin-top: -10px;
-	margin-bottom: 15px;
 }
 
 p > a:active {
@@ -278,6 +257,20 @@ button.submit:hover {
   cursor: pointer;
 }
 
+footer {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  background-color: #373737;
+  color: #FFF;
+  margin-top: 20px;
+}
+
+footer p {
+  padding-top: 14px;
+  margin-top: 0px;
+}
+
 /*-----------------Media Queries-----------------------*/
 @media only screen and (max-width: 1340px) {
 	.video {
@@ -363,9 +356,6 @@ button.submit:hover {
 }
 
  @media only screen and (min-width: 504px) and (max-width: 549px) {
-  .cta {
-    width: 70%;
-  }
 
 	.section1 {
 		width: 100%;
@@ -376,14 +366,7 @@ button.submit:hover {
 	}
 }
 
-@media only screen and (min-width: 421px) and (max-width: 503px) {}
-  .cta {
-    width: 70%;
-  }
-
-  .cta a img {
-    margin-top: 40px;
-  }
+@media only screen and (min-width: 421px) and (max-width: 503px) {
 
 	.video {
 		display: none;
@@ -483,9 +466,6 @@ button.submit:hover {
 }
 
 @media only screen and (max-width: 420px) {
-  .cta {
-    width: 70%;
-  }
 
   .cta a img {
     margin-top: 40px;
